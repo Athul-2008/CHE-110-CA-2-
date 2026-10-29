@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>EcoChem — Smart Waste Sorting</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <a class="logo" href="#">EcoChem</a>
+    <nav>
+      <a href="#assistant">Assistant</a>
+      <a href="#guide">Sorting guide</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="assistant">
+      <p class="eyebrow">SMART WASTE SEGREGATION ASSISTANT</p>
+      <h1>Give waste a <span>better</span> next chapter.</h1>
+      <p class="intro">
+        A chemistry-powered guide to sorting everyday items into the right stream.
+      </p>
+
+      <form id="sort-form">
+        <label class="sr-only" for="item">What are you throwing away?</label>
+        <input id="item" type="text" placeholder="What are you throwing away?">
+        <button type="submit">Sort it</button>
+      </form>
+
+      <p class="try-label">Try one:</p>
+      <div class="examples">
+        <button type="button" data-item="banana peel">banana peel</button>
+        <button type="button" data-item="plastic bottle">plastic bottle</button>
+        <button type="button" data-item="old battery">old battery</button>
+        <button type="button" data-item="smartphone">smartphone</button>
+        <button type="button" data-item="paper cup">paper cup</button>
+        <button type="button" data-item="paint can">paint can</button>
+      </div>
+
+      <p id="result" class="result" aria-live="polite">
+        Enter an item to see how to sort it.
+      </p>
+    </section>
+
+    <section id="guide" class="guide">
+      <p class="eyebrow">OR CHOOSE A PATH</p>
+      <h2>Four streams. One healthier planet.</h2>
+      <div class="streams">
+        <article class="stream biodegradable">
+          <h3>Biodegradable</h3>
+          <p>Returns to nature</p>
+        </article>
+        <article class="stream recyclable">
+          <h3>Recyclable</h3>
+          <p>Gets a second life</p>
+        </article>
+        <article class="stream hazardous">
+          <h3>Hazardous</h3>
+          <p>Handle with care</p>
+        </article>
+        <article class="stream electronic">
+          <h3>Electronic</h3>
+          <p>Recover the tech</p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer>Made with curiosity, chemistry &amp; care for our shared home.</footer>
+  <script src="script.js"></script>
+</body>
+</html>
